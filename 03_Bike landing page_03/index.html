@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something New - By Sanjeev Kumar</title>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/39660b0122.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '300px',
+
+                    'tablet': '700px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'laptop': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'desktop': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+                },
+                extend: {
+                    backgroundImage: {
+                        'bgimg': "url('./assets/background.png')"
+                    },
+                    font: {
+                        'Open Sans': 'Open Sans',
+                        'Orbitron': 'Orbitron',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="w-full flex justify-around items-center my-8 flex-wrap">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <ul class="flex">
+                <li class="mx-8 text-[1.2rem] font-semibold">
+                    <a href="#">Products</a>
+                </li>
+                <li class="mx-8 text-[1.2rem] font-semibold">
+                    <a href="#">Gallery</a>
+                </li>
+                <li class="mx-8 text-[1.2rem] font-semibold">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="btn">
+                <button class="px-6 py-3 rounded-lg shadow-lg">LOG IN</button>
+                <button class="px-6 py-3 bg-gray-800 rounded-lg text-white shadow-lg">SIGN UP</button>
+            </div>
+        </nav>
+        <div class="w-full h-[1px] bg-gray-300 shadow-lg"></div>
+    </header>
+
+    <section>
+        <div class="w-full flex justify-center">
+            <div class="sm:w-[90%] tablet:w-[90%] flex justify-around items-center flex-wrap my-20">
+                <!-- left -->
+                <div class="w-[500px]">
+                    <h1 class="text-7xl w-[90%] my-5"><span class="">LET'S RIDE</span> <span class="font-bold">THE
+                            FUTURE.</span></h1>
+                    <span class="w-[50%] bg-gray-800 h-[4px] block my-16"></span>
+                    <p class="my-5 text-gray-600 text-lg">Simple and sleek design with users in mind.</p>
+
+                    <div class="w-[80%] flex justify-around items-start my-8">
+                        <div class="w-full">
+                            <button class="px-4 py-2 bg-gray-800 text-white shadow-lg">&rightarrow;</button> <span
+                                class="font-semibold ml-5">Buy Now</span>
+                        </div>
+                        <p>watch our video how it works</p>
+                        <img src="./assets/header play button.png" alt="">
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="sm:w-[80%] tablet:w-[50%]">
+                    <img src="./assets/header image.png" alt="" class="w-[90%]">
+                </div>
+            </div>
+        </div>
+
+        <!-- right btn -->
+        <div class="w-full flex justify-end pr-10 items-center gap-5">
+            <img src="./assets/01.png" alt="" class="one_img">
+            <div class="w-[120px] flex justify-around px-12 py-3 border-2 border-gray-900 rounded-[50px]">
+                <span>&leftarrow;</span>
+                <span class="w-[5px] h-[100%]"></span>
+                <span>&rightarrow;</span>
+            </div>
+        </div>
+
+
+        <div class="w-full flex justify-around items-start flex-wrap my-16">
+
+            <div class="w-[200px] bg-white shadow-lg p-8 flex justify-center items-center flex-col my-5">
+                <h3 class="font-bold text-3xl my-3">105 <span class="text-[1rem]">lbs</span></h3>
+                <p>Net Weight</p>
+            </div>
+
+            <div class="w-[200px] bg-white shadow-lg p-8 flex justify-center items-center flex-col my-5">
+                <h3 class="font-bold text-3xl my-3">105 <span class="text-[1rem]">lbs</span></h3>
+                <p>Top Speed</p>
+            </div>
+
+            <div class="w-[200px] bg-white shadow-lg p-8 flex justify-center items-center flex-col my-5">
+                <h3 class="font-bold text-3xl my-3">105 <span class="text-[1rem]">lbs</span></h3>
+                <p>Max Range</p>
+            </div>
+
+            <div class="w-[200px] bg-white shadow-lg p-8 flex justify-center items-center flex-col my-5">
+                <h3 class="font-bold text-3xl my-3">89 <span class="text-[1rem]">nm</span></h3>
+                <p>Max Torques</p>
+            </div>
+
+            <div class="w-[200px] bg-white shadow-lg p-8 flex justify-center items-center flex-col my-5">
+                <h3 class="font-bold text-3xl my-3">22% <span class="text-[1rem]">slope</span></h3>
+                <p>Hill Climbing</p>
+            </div>
+
+            <div class="w-[200px] bg-white shadow-lg p-8 flex justify-center items-center flex-col my-5">
+                <h3 class="font-bold text-3xl my-3">22% <span class="text-[1rem]">slope</span></h3>
+                <p>Hill Climbing</p>
+            </div>
+        </div>
+
+        <!-- products items -->
+        <div class="w-full flex justify-center items-center flex-col">
+            <div class="text-center">
+                <h2 class="font-bold text-6xl my-5">Product Information</h2>
+                <p>Our Scooter has following unique design and technology features:</p>
+            </div>
+            <div class="w-full flex justify-center items-center gap-5 flex-wrap my-20">
+
+                <div class="sm:w-[90%] tablet:w-[50%]">
+                    <img src="./assets/product information image.png" alt="" class="w-[80%]">
+                </div>
+
+                <div class="my-5 sm:w-full tablet:w-[45%] flex justify-center">
+                    <ul>
+                        <li class="my-5 inline-flex items-center gap-5 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]"> Lightweight aircraft grade aluminium frame</li>
+                        <li class="my-5 inline-flex items-center gap-5 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]">Car grade lithium batery</li>
+                        <li class="my-5 inline-flex items-center gap-5 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]">Self-balanced</li>
+                        <li class="my-5 inline-flex items-center gap-5 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]">Plug n play</li>
+                        <li class="my-5 inline-flex items-center gap-5 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]">Quick release adapter</li>
+                        <li class="my-5 inline-flex items-center gap-5 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]">RFID key card</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- products items -->
+        <div class="w-full flex justify-center items-center flex-wrap">
+            <div class="w-[90%] flex justify-center items-center flex-wrap">
+
+                <div class="text-center">
+                    <h2 class="font-bold text-6xl my-5">High Efficiency Motor</h2>
+                    <p class="text-2xl">Our Scooter has following unique design and technology features:</p>
+
+                    <img src="./assets/high efficiency motor.png" class="w-[80%] mx-auto my-20">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- products items -->
+        <div class="w-[90%] flex justify-center items-center flex-col mx-auto">
+            <div class="text-center">
+                <h2 class="font-bold text-6xl my-5">Product Information</h2>
+                <p>Our Scooter has following unique design and technology features:</p>
+            </div>
+
+            <div class="w-full flex justify-center items-center gap-5 flex-wrap my-20">
+
+                <div class="my-5 flex justify-end sm:w-[80%] tablet:w-[40%]">
+                    <ul>
+                        <li class="my-5 text-5xl font-bold w-full">Golf Bag Rock</li>
+                        <li class="my-5 inline-flex items-center gap-3 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]">Material: Aluminium alloy</li>
+                        <li class="my-5 inline-flex items-center gap-3 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]">Color: Black</li>
+                        <li class="my-5 inline-flex items-center gap-3 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]">Capacity: 45lbs</li>
+                        <li class="my-5 inline-flex items-center gap-3 w-full"><img src="./assets/Icon.png" alt=""
+                                class="w-[30px]">Ease: Steady & Adjustable</li>
+                    </ul>
+                </div>
+
+                <div class="sm:w-[90%] tablet:w-[50%]">
+                    <img src="./assets/golf bag rock.png" alt="" class="w-[100%]">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- products items -->
+        <div class="w-full flex justify-between items-center gap-5 flex-wrap my-10 flex-wrap">
+
+            <div class="sm:w-[90%] tablet:w-[50%]">
+                <img src="./assets/shopping rack.png" alt="" class="w-[90%]">
+            </div>
+
+            <div class="my-5 flex justify-end sm:w-[80%] tablet:w-[40%] mx-auto">
+                <ul>
+                    <li class="my-3 text-5xl font-bold w-full">Shopping Bag Rock</li>
+                    <li class="my-3 inline-flex items-center gap-3 w-full"><img src="./assets/Icon.png" alt=""
+                            class="w-[30px]">Material: Aluminium alloy</li>
+                    <li class="my-3 inline-flex items-center gap-3 w-full"><img src="./assets/Icon.png" alt=""
+                            class="w-[30px]">Color: Black</li>
+                    <li class="my-3 inline-flex items-center gap-3 w-full"><img src="./assets/Icon.png" alt=""
+                            class="w-[30px]">Capacity: 45lbs</li>
+                    <li class="my-3 inline-flex items-center gap-3 w-full"><img src="./assets/Icon.png" alt=""
+                            class="w-[30px]">Ease: Steady & Adjustable</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-full flex justify-center my-10">
+            <button class="px-10 py-5 border-4 border-gray-900 text-2xl font-bold rounded-lg">More Accessories Coming Soon</button>
+        </div>
+
+
+        <!-- GALLERY items -->
+        <div class="w-[80%] flex justify-center items-center flex-col mx-auto">
+            <div class="text-center my-5">
+                <h2 class="font-bold text-6xl my-5">Gallery</h2>
+                <p>Our Scooter has following unique design and technology features:</p>
+            </div>
+
+            <div class="w-full flex justify-center items-center gap-5 flex-wrap my-10">
+
+                <div class="my-5 flex justify-center items-end sm:w-[80%] tablet:w-[40%] flex-col">
+                    <div class="relative">
+                        <img src="./assets/gallery scooter.png" alt="" class="w-[90%]">
+                        <span class="absolute top-0 text-2xl font-semibold m-5">Scooter</span>
+                    </div>
+                    <div class="w-full my-10">
+                        <button class="px-10 py-5 w-full my-2 border-2 border-gray-900 text-2xl font-bold rounded-lg">Battery Images</button>
+                        <button class="px-10 py-5 w-full  my-2 border-2 border-gray-900 text-2xl font-bold rounded-lg">Spare Parts Images</button>
+                        <button class="px-10 py-5 w-full  my-2 border-2 border-gray-900 text-2xl font-bold rounded-lg">Charging Cable</button>
+                    </div>
+                </div>
+
+                <div class="sm:w-[90%] tablet:w-[50%] my-5 flex justify-center items-end flex-col">
+                    <div class="my-5 relative">
+                        <img src="./assets/gallery built quality.png" alt="" class="sm:w-full tablet:w-[80%]">
+                        <span class="absolute top-0 text-2xl font-semibold m-5">Built Quality</span>
+                    </div>
+                    <div class="my-10 relative">
+                        <img src="./assets/gallery parts.png" alt="" class="sm:w-full tablet:w-[80%]">
+                        <span class="absolute top-0 text-2xl font-semibold m-5">Parts</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- colors items -->
+        <div class="w-[80%] flex justify-center items-center flex-col mx-auto relative pb-20 ">
+            <div class="text-center">
+                <h2 class="font-bold text-6xl my-5">Colors</h2>
+                <p>Our Scooter has following unique</p>
+            </div>
+
+            <div class="w-full flex justify-center items-center gap-5 flex-wrap my-10">
+
+                <div class="flex justify-center sm:w-[100%] tablet:w-[100%] flex-col bg-[orange]-500">
+                    <div class="relative w-[100%] top-0">
+                        <img src="./assets/gallery scooter.png" alt="" class="w-[90%] mx-auto">
+
+                        <div class="w-[100%] flex justify-around absolute bottom-[-100px]">
+
+                            <div class="relative w-[250px] h-[250px]">
+                                <img src="./assets/color-scooter-1.png" class="w-[250px] h-[250px] ">
+                                <span class="text-5xl font-semibold text-gray-300 absolute bottom-[50px] sm:right-[45px] laptop:right-[55px]">01</span>
+                            </div>
+
+                            <div class="relative w-[250px] h-[250px]">
+                                <img src="./assets/color-scooter-2.png" class="w-[250px] h-[250px] ">
+                                <span class="text-5xl font-semibold text-gray-300 absolute bottom-[60px] sm:right-[45px] laptop:right-[55px]">02</span>
+                            </div>
+
+                            <div class="relative w-[250px] h-[250px]">
+                                <img src="./assets/color-scooter-3.png" class="w-[250px] h-[250px]">
+                                <span class="text-5xl font-semibold text-gray-300 absolute bottom-[60px] right-[55px]">03</span>
+                            </div>
+
+                            <div class="relative w-[250px] h-[250px]">
+                                <img src="./assets/color-scooter-4.png" class="w-[250px] h-[250px] sm:hidden laptop:block">
+                                <span class="text-5xl font-semibold text-gray-300 absolute bottom-[60px] sm:right-[45px] laptop:right-[55px] sm:hidden laptop:block">04</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- testimonial items -->
+        <div class="w-[80%] flex justify-center items-center flex-col mx-auto my-20">
+            <div class="text-center my-5">
+                <h2 class="font-bold text-6xl my-5">Testimonials</h2>
+            </div>
+
+            <div class="w-full flex justify-center items-center gap-10 flex-wrap my-10">
+
+                <div class="w-[300px] bg-white p-5 rounded-lg text-center border-2 hover:shadow-lg">
+                    <div>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati numquam odit ea iste ipsum temporibus eos laborum dolorem dicta quos?
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center gap-3 my-10">
+                        <img src="./assets/serhiy hipskyy.png" alt="" srcset="">
+                        <p>Serhiy Hipskky <br/> <span>CEO Universal</span></p>
+                    </div>
+                </div>
+
+                <div class="w-[300px] bg-white p-5 rounded-lg text-center border-2 hover:shadow-lg">
+                    <div>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati numquam odit ea iste ipsum temporibus eos laborum dolorem dicta quos?
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center gap-3 my-10">
+                        <img src="./assets/Britain Eriksen.png" alt="" srcset="">
+                        <p>Serhiy Hipskky <br/> <span>CEO Universal</span></p>
+                    </div>
+                </div>
+
+                <div class="w-[300px] bg-white p-5 rounded-lg text-center border-2 hover:shadow-lg">
+                    <div>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <i class="fa-solid fa-star text-orange-500"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati numquam odit ea iste ipsum temporibus eos laborum dolorem dicta quos?
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center gap-3 my-10">
+                        <img src="./assets/Justus Menke.png" alt="" srcset="">
+                        <p>Serhiy Hipskky <br/> <span>CEO Universal</span></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center my-5 sm:hidden tablet:block">
+                <button class="w-[60px] my-auto mx-auto h-[60px] border-2 border-gray-900 bg-gray-600 text-white text-3xl rounded-full mx-3 shadow-lg">&leftarrow;</button>
+                <button class="w-[60px] my-auto mx-auto h-[60px] border-2 border-gray-900 bg-gray-900 text-white text-3xl rounded-full shadow-lg">&rightarrow;</button>
+            </div>
+
+        </div>
+
+        <!-- subscribe items -->
+        <div class="sm:w-full tablet:w-[80%] flex justify-center items-center flex-col mx-auto my-20">
+
+            <div class="text-center my-5">
+                <h2 class="font-bold text-5xl my-5">Subscribe To Newsletter</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis.</p>
+            </div>
+
+            <div class="sm:w-[80%] tablet:w-[600px] my-5 mx-auto bg-gray-200 flex rounded-lg">
+                <input type="email" placeholder="Enter your email" class="w-full px-5 py-4 outline-0 border-0 text-2xl bg-gray-200 rounded-lg">
+                <button class="px-5 py-4 w-[200px] bg-gray-600 text-2xl text-white rounded-lg ml-3">Get Start</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="w-full min-h-[400px] bg-gray-700">
+
+        <div class="w-full flex justify-between items-center mx-auto flex-wrap">
+
+        <!-- left item -->
+            <div class="relative top-[-70px]">
+                <img src="./assets/footer scooter.png" alt="" class="sm:w-full laptop:w-[550px]">
+            </div>
+
+        <!-- right Items -->
+            <div class="sm:w-full laptop:w-[60%] flex justify-around items-start flex-wrap gap-3">
+                <div>
+                    <ul class="leading-loose text-white">
+                        <li class="my-3 font-bold text-2xl">About</li>
+                        <li class="my-3"><a href="#">Company</a></li>
+                        <li class="my-3"><a href="#">Teams</a></li>
+                        <li class="my-3"><a href="#">Profile</a></li>
+                        <li class="my-3"><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="leading-loose text-white">
+                        <li class="my-3 font-bold text-2xl">Resources</li>
+                        <li class="my-3"><a href="#">Contact</a></li>
+                        <li class="my-3"><a href="#">Application</a></li>
+                        <li class="my-3"><a href="#">FAQs Feature</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="leading-loose text-white">
+                        <li class="my-3 font-bold text-2xl">Legals</li>
+                        <li class="my-3"><a href="#">Copyright Privacy</a></li>
+                        <li class="my-3"><a href="#">Policy Disclaimer</a></li>
+                        <li class="my-3"><a href="#">Terms</a></li>
+                    </ul>
+                    <div class="w-full flex justify-end my-10">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook mx-3 text-2xl text-gray-900 px-3 py-2 bg-gray-100 rounded-full"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter mx-3 text-2xl text-gray-900 px-3 py-2 bg-gray-100 rounded-full"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram mx-3 text-2xl text-gray-900 px-3 py-2 bg-gray-100 rounded-full"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full text-center py-5">
+                <p class="text-gray-200 text-[1.2rem]">&copy; Copyright 2023, All Right Reserved.</p>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

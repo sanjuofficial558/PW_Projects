@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pixlab - Sanjeev Kumar</title>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/39660b0122.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #msg_input::placeholder{
+            color: black;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '300px',
+
+                    'tablet': '700px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'laptop': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'desktop': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+                },
+                extend: {
+                    backgroundImage: {
+                        'bgimg': "url('./assets/background.png')"
+                    },
+                    font: {
+                        'poppins': 'Poppins',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="w-full flex justify-around items-center py-5">
+        <div>
+            <img src="./Pixlab/Logo.png" alt="" width="200px">
+        </div>
+        <nav>
+            <ul class="inline-flex">
+                <li class="px-3"><a href="#" class="text-lg font-semibold text-poppins">Home</a></li>
+                <li class="px-3"><a href="#" class="text-lg font-semibold text-poppins">About Us</a></li>
+                <li class="px-3"><a href="#" class="text-lg font-semibold text-poppins">Our App</a></li>
+                <li class="px-3"><a href="#" class="text-lg font-semibold text-poppins">Contacts</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button class="mx-5">Log in</button>
+            <button class="bg-red-500 py-2 px-5 rounded-lg">Sing Up</button>
+        </div>
+    </header>
+    <section>
+
+        <div class="w-full flex justify-center items-center">
+            <div class="sm:w-[90%] tablet:w-[90%] laptop:w-full flex sm:justify-between laptop:justify-around sm:items-center tablet:items-start sm:flex-col tablet:flex-row flex-wrap my-10">
+
+                <!-- left item -->
+                <div class="sm:w-[100%] tablet:w-[60%] laptop:w-[40%]">
+                    <div class="my-10">
+                        <h2 class="text-6xl font-bold my-10">We Boost growth for your startup Business.</h2>
+                        <p class="text-lg my-5 leading-tight sm:w-full tablet:w-[70%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Minus doloribus dolorem aliquid ducimus dolorum fugit eum illo repellendus tempore totam!
+                        </p>
+                    </div>
+                    <div class="my-10">
+                        <button class="px-5 py-2 bg-red-500 rounded-lg">Get Started</button>
+                        <button class="px-5 py-2 bg-red-500 rounded-lg mx-3">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- right item -->
+                <div class="sm:w-[100%] tablet:w-[60%] laptop:w-[40%]">
+                    <div class="my-10 relative">
+                        <!-- top item -->
+                        <div
+                            class="flex items-center gap-5 absolute bg-gray-100 top-0 left-[-80px] p-3 w-[300px] rounded-lg shadow-2xl">
+
+                            <div>
+                                <i class="fa-solid fa-arrow-up-right-dots text-4xl font-bold"></i>
+                            </div>
+
+                            <div>
+                                <p class="font-bold">
+                                    100% Business Growth
+                                </p>
+                                <p>
+                                    <i class="fa-regular fa-star text-[crimson] text-2xl"></i>
+                                    <span>4.9</span><span> [2250 Reviews]</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!-- right img -->
+                        <img src="./Pixlab/Group 10.png" alt="" class="absolute top-[50px] left-[-70px] z-10 w-[85%]">
+                        <img src="./Pixlab/joyful-guy.png" class="w-[70%] relative z-10" alt="">
+                        <!-- top right item -->
+                        <div
+                            class="gap-5 absolute bg-gray-100 bottom-[3rem] left-[-200px] p-3 w-[250px] rounded-lg shadow-2xl z-0">
+                            <div>
+                                <p class="font-bold">
+                                    100,000 Happy Clients
+                                </p>
+                                <p>
+                                    <i class="fa-regular fa-star text-[crimson] text-2xl"></i>
+                                    <span>4.9</span><span> [15k Reviews]</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <!-- top right item end -->
+                    </div>
+                </div>
+                <!-- right item end -->
+            </div>
+        </div>
+        <!-- --------------top item end------ -->
+
+        <div class="w-full flex justify-center items-start">
+            <div class="sm:w-[80%] tablet:w-[90%] flex justify-center items-center gap-5 flex-col my-20">
+                <div class="text-center mb-12">
+                    <h2 class="text-lg text-gray-500 tracking-widest">SERVICE</h2>
+                    <h1 class="text-4xl font-bold">Our Vision & Our Goal</h1>
+                </div>
+               <!-- inner flex -->
+                <div class="sm:w-[80%] tablet:w-[90%] flex justify-center gap-10 items-center flex-wrap my-10">
+
+                    <!-- item1 -->
+                    <div class="w-[350px] bg-white p-3 rounded-lg shadow-2xl">
+                        <div class="w-full text-center my-5">
+                            <i class="fa-solid fa-arrow-up-right-dots text-5xl font-bold"></i>
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-4xl font-bold my-5">Graphic Design</h2>
+                            <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus omnis, eligendi,
+                                ratione ipsum sequi illum aliquid perspiciatis quaerat commodi sit molestiae ex culpa
+                                eum?</p>
+                        </div>
+                        <div class="w-full mx-auto text-center my-5">
+                            <button class="py-2 px-5 bg-red-500 rounded-lg">Learn More</button>
+                        </div>
+                    </div>
+                    <!-- item2 -->
+                    <div class="w-[350px] bg-white p-3 rounded-lg shadow-2xl">
+                        <div class="w-full text-center my-5">
+                            <i class="fa-solid fa-video text-5xl font-bold"></i>
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-4xl font-bold my-5">Video Editing</h2>
+                            <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus omnis, eligendi,
+                                ratione ipsum sequi illum aliquid perspiciatis quaerat commodi sit molestiae ex culpa
+                                eum?</p>
+                        </div>
+                        <div class="w-full mx-auto text-center my-5">
+                            <button class="py-2 px-5 bg-red-500 rounded-lg">Learn More</button>
+                        </div>
+                    </div>
+                    <!-- item3 -->
+                    <div class="w-[350px] bg-white p-3 rounded-lg shadow-2xl">
+                        <div class="w-full text-center my-5">
+                            <i class="fa-solid fa-chart-simple text-5xl font-bold"></i>
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-4xl font-bold my-5">Digital Marketing</h2>
+                            <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus omnis, eligendi,
+                                ratione ipsum sequi illum aliquid perspiciatis quaerat commodi sit molestiae ex culpa
+                                eum?</p>
+                        </div>
+                        <div class="w-full mx-auto text-center my-5">
+                            <button class="py-2 px-5 bg-red-500 rounded-lg">Learn More</button>
+                        </div>
+                    </div>
+                    <!-- item end -->
+                </div>
+                <!-- inner flex end -->     
+            </div>
+        </div>
+
+        <div class="w-full flex justify-center items-start">
+            <div class="sm:w-[80%] tablet:w-[90%] flex justify-center items-center gap-2 sm:flex-col tablet:flex-row flex-wrap p-3 mx-auto my-20">
+                <!-- left item -->
+                <div class="sm:w-full tablet:w-[45%]">
+                    <h2 class="font-bold text-2xl text-blue-800">Many Blocks and Components</h2>
+                    <p class="text-1xl text-gray-600 sm:w-[100%] tablet:w-[60%] leading-loose my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error pariatur nisi sint. Impedit nihil officia, rerum earum aliquid inventore iure libero laudantium commodi voluptatum.</p>
+
+                    <button class="px-10 py-2 border-2 border-slate-500 rounded-full my-10 font-semibold">Explore</button>
+                </div>
+                <!-- right item -->
+                <div class="sm:w-[90%] tablet:w-[50%]">
+                    <img src="./Pixlab/Video Player.png" alt="" width="600px">
+                </div>
+                <!-- right item end -->
+            </div>
+        </div>
+
+
+        <div class="w-full flex justify-center items-start">
+            <div class="sm:w-[80%] tablet:w-[90%] flex justify-center items-center gap-5 flex-col my-10">
+                <div class="text-center mb-12">
+                    <h2 class="text-lg text-gray-500 tracking-widest">TESTMONIALS</h2>
+                    <h1 class="text-4xl font-bold my-2">What Clients say about us</h1>
+                </div>
+               <!-- inner flex -->
+                <div class="sm:w-[80%] tablet:w-[80%] flex justify-around gap-10 items-center flex-wrap my-10">
+
+                   <div class="flex sm:w[80%] tablet:w-[45%] items-start">
+                       <div>
+                           <img src="./Pixlab/Mask.png" width="200px">
+                       </div>
+                       <div class="ml-3">
+                           <p class="font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, aperiam? Sit repellendus tempora, blanditiis iusto, expedita esse aspernatur ea amet fugiat inventore quae architecto magnam.</p>
+                           <p class="uppercase my-5 text-gray-500">rayhan curran</p>
+                       </div>
+                   </div>
+                   
+                   <div class="flex sm:w[80%] tablet:w-[45%] items-start">
+                       <div>
+                           <img src="./Pixlab/Mask (1).png" width="200px">
+                       </div>
+                       <div class="ml-3">
+                           <p class="font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, aperiam? Sit repellendus tempora, blanditiis iusto, expedita esse aspernatur ea amet fugiat inventore quae architecto magnam.</p>
+                           <p class="uppercase my-5 text-gray-500">rayhan curran</p>
+                       </div>
+                   </div>
+
+                   <div class="flex sm:w[80%] tablet:w-[45%] items-start">
+                       <div>
+                           <img src="./Pixlab/Mask (2).png" width="200px">
+                       </div>
+                       <div class="ml-3">
+                           <p class="font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi expedita esse aspernatur ea amet fugiat inventore quae architecto magnam.</p>
+                           <p class="uppercase my-5 text-gray-500">rayhan curran</p>
+                       </div>
+                   </div>
+                   <div class="flex sm:w[80%] tablet:w-[45%] items-start">
+                       <div>
+                           <img src="./Pixlab/Mask (3).png" width="200px">
+                       </div>
+                       <div class="ml-3">
+                           <p class="font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, aperiam? Sit repellendus tempora, blanditiis iusto.</p>
+                           <p class="uppercase my-5 text-gray-500">rayhan curran</p>
+                       </div>
+                   </div>
+
+                </div>
+                <!-- inner flex end -->     
+            </div>
+        </div>
+
+        <div class="w-full flex justify-center items-start">
+            <div class="sm:w-[80%] tablet:w-[90%] flex justify-center items-center gap-5 flex-col my-20">
+                <div class="text-center mb-12">
+                    <h2 class="text-lg text-gray-500 tracking-widest">OUR TEAM</h2>
+                    <h1 class="text-4xl font-bold my-5">Meet The Team</h1>
+                </div>
+               <!-- inner flex -->
+                <div class="sm:w-[80%] tablet:w-[90%] flex justify-center gap-10 items-center flex-wrap my-10">
+
+                    <!-- item1 -->
+                    <div class="w-[350px] bg-white rounded-lg shadow-2xl border-2 border-slate-300">
+                        <div class="w-full flex justify-center my-5">
+                            <img src="./Pixlab/Userpic (2).png" alt="" width="120px">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-2xl font-bold my-5">Vanessa Laired</h2>
+                            <p class="text-lg text-gray-500">UI DESIGNER</p>
+                        </div>
+                        <div class="w-full mx-auto flex justify-around mt-10">
+                            <table class="border-collapse w-full text-center text-gray-500">
+                                <tr>
+                                    <td class="border border-slate-300 p-2">
+                                        <a href="#" class="">
+                                            <i class="fa-brands fa-twitter text-2xl"></i>
+                                        </a>
+                                    </td>
+                                    <td class="border border-slate-300 p-2">
+                                        <a href="#" class="">
+                                            <i class="fa-brands fa-facebook text-2xl"></i>
+                                        </a>
+                                    </td>
+                                    <td class="border border-slate-300 p-2">
+                                        <a href="#" class="">
+                                            <i class="fa-brands fa-github text-2xl"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="w-[350px] bg-white rounded-lg shadow-2xl border-slate-300">
+                        <div class="w-full flex justify-center my-5">
+                            <img src="./Pixlab/Userpic (1).png" alt="" width="120px">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-2xl font-bold my-5">Mason Campbel</h2>
+                            <p class="text-lg text-gray-500">UI DESIGNER</p>
+                        </div>
+                        <div class="w-full mx-auto flex justify-around mt-10">
+                            <table class="border-collapse w-full text-center text-gray-500">
+                                <tr>
+                                    <td class="border border-slate-300 p-2">
+                                        <a href="#" class="">
+                                            <i class="fa-brands fa-twitter text-2xl"></i>
+                                        </a>
+                                    </td>
+                                    <td class="border border-slate-300 p-2">
+                                        <a href="#" class="">
+                                            <i class="fa-brands fa-facebook text-2xl"></i>
+                                        </a>
+                                    </td>
+                                    <td class="border border-slate-300 p-2">
+                                        <a href="#" class="">
+                                            <i class="fa-brands fa-github text-2xl"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="w-[350px] bg-white rounded-lg shadow-2xl border-slate-300">
+                        <div class="w-full flex justify-center my-5">
+                            <img src="./Pixlab/Mask (3).png" alt="" width="120px">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-2xl font-bold my-5">Irea Evans</h2>
+                            <p class="text-lg text-gray-500">CLIENT MANAGER</p>
+                        </div>
+                        <div class="w-full mx-auto flex justify-around mt-10">
+                            <table class="border-collapse w-full text-center text-gray-500">
+                                <tr>
+                                    <td class="border border-slate-300 p-2">
+                                        <a href="#" class="">
+                                            <i class="fa-brands fa-twitter text-2xl"></i>
+                                        </a>
+                                    </td>
+                                    <td class="border border-slate-300 p-2">
+                                        <a href="#" class="">
+                                            <i class="fa-brands fa-facebook text-2xl"></i>
+                                        </a>
+                                    </td>
+                                    <td class="border border-slate-300 p-2">
+                                        <a href="#" class="">
+                                            <i class="fa-brands fa-github text-2xl"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- item end -->
+                </div>
+                <!-- inner flex end -->     
+            </div>
+        </div>
+
+
+        <div class="w-full flex justify-center items-start">
+            <div class="sm:w-[80%] tablet:w-[90%] flex justify-center items-center gap-5 flex-col my-20">
+                <div class="text-center mb-12">
+                    <h2 class="text-lg text-gray-500 tracking-widest">OUR TEAM</h2>
+                    <h1 class="text-4xl font-bold my-5">Subscribe Our Newsletter</h1>
+                </div>
+               <!-- inner flex -->
+                <div class="sm:w-[80%] tablet:w-[90%] flex justify-around gap-10 items-start flex-wrap my-10">
+
+                    <!-- left item1 -->
+                    <div class="sm:w-[90%] tablet:w-[45%]">
+                        <div class="w-full flex justify-center my-5">
+                            <img src="./Pixlab/Frame.png" alt="" class="sm:w-[90%] tablet:w-[70%]">
+                        </div>
+                    </div>
+
+                    <!-- right item1 -->
+                    <div class="sm:w-full tablet:w-[50%] my-10">
+                        <div class="w-full">
+                            <p class="my-5 leading-loose font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat magnam autem, suscipit atque est quos neque dolorem eius, vel esse? Ex neque ipsa dignissimos tempore suscipit temporibus alias pariatur.</p>
+                            <div class="w-full bg-white h-[60px] rounded-full my-10">
+                                <input type="email" placeholder=" Your E-mail here..." class="outline-0 px-10 py-2 w-full h-[100%] p-3 rounded-full text-2xl font-semibold" id="msg_input">
+                            </div>
+                        </div>
+                        <div class="w-full mx-auto flex justify-around mt-10 shadow-2xl">
+                            <button class="px-5 py-3 bg-orange-600 rounded-lg w-full font-semibold text-white text-[1.1rem]">Subscribe Our Newsletter</button>
+                        </div>
+                    </div>
+                    <!-- item end -->
+                </div>
+                <!-- inner flex end -->     
+            </div>
+        </div>
+
+    </section>
+
+
+<footer>
+
+    <div class="w-full flex justify-center items-start">
+        <div class="sm:w-[80%] tablet:w-[90%] flex justify-center items-center gap-5 sm:flex-col tablet:flex-row my-10">
+            <!-- right footer -->
+            <div class="sm:w-[100%] tablet:w-[45%] flex sm:justify-center tablet:justify-around gap-5 sm:flex-col tablet:flex-row">
+                <div>
+                    <img src="./Pixlab/Logo.png" alt="footer-logo" class="sm:w-[120px]">
+                </div>
+                <div class="text-1xl text-blue-900 font-semibold">
+                    &copy; 2023 Epixlap, All Right Reserved.
+                </div>
+            </div>
+            <!-- left footer -->
+            <div class="sm:w-full tablet:w-[50%] flex justify-center">
+                <ul class="w-full flex justify-center gap-5 text-1xl text-blue-900 font-semibold sm:flex-col tablet:flex-row">
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">How it works</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[100%] py-2">
+        <div class="w-[90%] h-[1px] bg-gray-400 mx-auto"></div>
+    </div>
+
+    <div class="w-[100%] py-5">
+        <div class="w-[90%] mx-auto text-gray-500">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, praesentium.
+        </div>
+    </div>
+
+</footer>
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-made by Sanjeev Kumar ->>>>>>>>>>>>>>>> -->
+</body>
+
+</html>

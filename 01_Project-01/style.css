@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 100px;
+}
+nav ul>li{
+    list-style: none;
+    padding: 10px 15px;
+}
+nav ul>li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: gray;
+    font-weight: 500;
+    transition: .5s;
+}
+nav ul>li a:hover{
+    color: crimson;
+}
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.line{
+    width: 1px;
+    height: 120px;
+    background: rgb(107, 107, 107);
+    margin-right: 10px;
+}
+.left_item .left_title{
+    width: 450px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin: 10px 0;
+}
+.left_item .left_desc{
+    width: 300px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: gray;
+}
+.right_box{
+    width: 500px;
+}
+.relative{
+    position: relative;
+    top: 0;left: 0;
+}
+.absolute{
+    left: 0;
+    position: absolute;
+}
+.img{
+    bottom: 5px;
+    left: 90px;
+    width: 250px;
+}
+.btn{
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border-radius: 3px;
+}
+.btn_color{
+    background-color: #ff4500;
+    outline: none;
+    border: none;
+    margin: 20px 0;
+}
+.font-m{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.mobile_icon{
+    display: none;
+}
+.user_img{
+    border-radius: 50%;
+    margin-left: 1.5rem;
+}
+/* -------------------footer---------- */
+.footer_item{
+    width: 320px;
+    color: aliceblue;
+}
+.footer_item h2{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.footer_item .f_title{
+    font-size: 2.8rem;
+}
+.f_icon{
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+/*----------------- footer icon color------------- */
+.c1{
+    background-color: #28d99e;
+}
+.c2{
+    background-color: #ff7738;
+}
+.c3{
+    background-color: #e50efd;
+}

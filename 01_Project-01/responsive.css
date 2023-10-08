@@ -1,0 +1,24 @@
+@media screen and (max-width:900px){
+    nav{
+        display: none;
+    }
+    .mobile_icon{
+        display: block;
+    }
+    .m_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+    .pc_menu{
+        display: none;
+    }
+    .f_box{
+        margin-top: 20px 0;
+    }
+    .footer_item{
+        text-align: center;
+    }
+}
